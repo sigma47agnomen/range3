@@ -7,7 +7,7 @@ myPath=$(getScriptPath)
 
 . ${myPath}/lib.sh
 
-# You're gonna need xcode already installed.
+# You're going to need xcode already installed.
 
 # Install brew if it's not there.
 if [[ ! -x $(which brew) ]]; then
@@ -23,17 +23,17 @@ fi
 packagesToInstall=
 
 if [[ ! -x $(which qmake) ]]; then
-    echo_i "Instalilng qt"
+    echo_i "Installing qt"
     packagesToInstall+="qt "
 fi
 
 if [[ ! -x $(which ffmpeg) ]]; then
-    echo_i "Instaling ffmpeg"
+    echo_i "Installing ffmpeg"
     packagesToInstall+="ffmpeg "
 fi
 
 if [[ ! -x $(which create-dmg) ]]; then
-    echo_i "Instalilng create-dmg"
+    echo_i "Installing create-dmg"
     packagesToInstall+="create-dmg "
 fi
 
